@@ -6,10 +6,7 @@ Example:
 >>> doorClosed = Event("doorClosed", "D1CL")
 >>> unlockPanelCmd = Command("unlockPanel", "PNUL")
 >>> unlockDoorCmd = Command("unlockDoor", "D1UL")
->>> idle = State("idle", actions=[unlockDoorCmd], 
-...     transitions={})
->>> state_machine = StateMachine(State("idle", actions=[unlockDoorCmd], 
-...                              transitions={doorClosed: idle}), [])
+>>> idle = State("idle", actions=[unlockDoorCmd], transitions={})
 """
 
 class AbstractEvent(object):
